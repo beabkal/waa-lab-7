@@ -1,10 +1,63 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin-top: 8%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.grid-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 10px; /* Optional gap between columns */
+
+  text-align: center;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; /* Single column for even smaller screens */
+  }
+
+}
+.Post {
+  background-color: rgb(18, 18, 232);
+  color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 1%;
+}
+.post-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.post-grid a {
+  margin: 0 10px; /* Adjust the margin value as per your preference */
+  padding: 5%;
+}
+
+
+.post-details {
+text-align: center;
+border: 2px solid blue;
+margin: 5%;
+}
+.underline-text {
+  text-decoration: underline;
+}
+
+.change-name {
+  margin-left: 1%;
+}
+.content {
+  margin-right: 0cm;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +67,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #eef0f4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
